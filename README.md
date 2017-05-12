@@ -12,7 +12,7 @@ C'est un jeu de combat qui a lieu dans un monde différent ou des chefs de gangs
 * Réduire la barre de vie de l'adversaire à 0
 * Timer afin d'éviter les combats trop long et défensifs
 
-### Technoligies:
+### Technologies:
 * HTML
 * CSS
 * JavaScript
