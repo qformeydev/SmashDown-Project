@@ -21,6 +21,7 @@ C'est un jeu de combat qui a lieu dans un monde différent ou des chefs de gangs
 * Piskel
 
 ### DATAS
-Empty
+* Deplacement de Eklectruc (2/2)
+* Attaque de Eklectruc (1/3)
 
 -N'hésitez pas a faire des donations. lel
