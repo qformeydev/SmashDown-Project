@@ -10,6 +10,7 @@ C'est un jeu de combat qui a lieu dans un monde différent ou des chefs de gangs
 * Combat en 1c1
 * Chaque personnage possède différentes attaques et caractères spéciaux
 * Réduire la barre de vie de l'adversaire à 0
+* Possibilité de bloquer seulement 3 fois a la suite
 * Timer afin d'éviter les combats trop long et défensifs
 * Style Graphique: Pixel Art
 
