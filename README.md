@@ -23,14 +23,14 @@ C'est un jeu de combat qui a lieu dans un monde différent ou des chefs de gangs
 
 ### DATAS
 1. SpriteSheet
-  * Deplacement de Eklectruc (2/2)
-  * Attaque de Eklectruc (1/3)
-  * Deplacement Nutstick (1/2)
-  * Attaque Nutstick (0/3)
+   * Deplacement de Eklectruc (2/2)
+   * Attaque de Eklectruc (1/3)
+   * Deplacement Nutstick (1/2)
+   * Attaque Nutstick (0/3)
     
 2. Game Devlp
-  * Sprite Moving
-  * HealthBar created
+   * Sprite Moving
+   * HealthBar created
   
 
 -N'hésitez pas a faire des donations. lel
