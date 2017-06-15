@@ -25,12 +25,14 @@ C'est un jeu de combat qui a lieu dans un monde différent ou des chefs de gangs
 1. SpriteSheet
    * Deplacement de Eklectruc (2/2)
    * Attaque de Eklectruc (1/3)
-   * Deplacement Nutstick (1/2)
-   * Attaque Nutstick (0/3)
+   * Deplacement Nutstick (2/2)
+   * Attaque Nutstick (1/3)
     
 2. Game Devlp
    * Sprite Moving
    * HealthBar created
-  
+   * Fighting System
+   * Block System
+ #### PROTO V1.0 DONE WITH SUCCESS 
 
 -N'hésitez pas a faire des donations. lel
