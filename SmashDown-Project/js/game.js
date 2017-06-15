@@ -11,6 +11,10 @@
 				nutstick: false
 			};
 		
+			var hitSymbole = {
+				eklectruc: false,
+				nutstick: false
+			};
 
 		WebFontConfig = {
 		    active: function() { game.time.events.add(Phaser.Timer.SECOND * 0, createText, this); },
@@ -36,6 +40,10 @@
 		    	game.load.image("block", "sprites/bouclier_block.png");
 		    	var block_eklectruc;
 		    	var block_nutstick;
+		    	game.load.image("hit_symbole_right", "sprites/hit_symbole_right.png");
+		    	game.load.image("hit_symbole_left", "sprites/hit_symbole_left.png");
+		    	var hit_symbole_eklectruc;
+		    	var hit_symbole_nutstick;
 
 		    // SOUND
 		    	game.load.audio('bg_music', ['sound/fight_music.mp3']);
@@ -98,6 +106,10 @@
 		    // BLOCK SPRITE
 				block_eklectruc = game.add.sprite(100, 105, 'block');
 				block_nutstick = game.add.sprite(1010, 105, 'block');
+
+			// HIT SPRITE
+				hit_symbole_eklectruc = game.add.sprite(210, 250, 'hit_symbole_left');
+				hit_symbole_nutstick = game.add.sprite(910, 250, 'hit_symbole_right');
 
 		    // MUSIC
 			    music = game.add.audio('bg_music', 0.4, true);
@@ -251,6 +263,11 @@
 					block_eklectruc.x += 60;
 					block_eklectruc.alpha = 0;
 
+				// GESTION HIT		
+					hit_symbole_eklectruc.x = player_eklectruc.x;
+					hit_symbole_eklectruc.x += 180;
+					hit_symbole_eklectruc.alpha = 0;
+
 		
 			    if (qKey.isDown) {
 			        player_eklectruc.body.velocity.x -= 500;
@@ -288,6 +305,11 @@
 					block_nutstick.x = player_nutstick.x;
 					block_nutstick.x += 60;
 					block_nutstick.alpha = 0;
+
+				// GESTION HIT		
+					hit_symbole_nutstick.x = player_nutstick.x;
+					hit_symbole_nutstick.x -= 50;
+					hit_symbole_nutstick.alpha = 0;
 
 				
 			    if (kKey.isDown) {
@@ -371,6 +393,7 @@
 
 			    	player_eklectruc_sample.alpha = 1; 
 					player_eklectruc_sample.animations.play('atk1');
+
 			
 					player_eklectruc.alpha = 0;
 					eklectruc_atk1.play();
@@ -380,7 +403,9 @@
 						console.log('PARADE!');
 						return;
 					}
+
 					console.log('HIT');
+
 
 					// Degat sur .life
 					// Calcul des damage sur la barre de vie

@@ -5,7 +5,7 @@ body{
 }
 h1{
 	padding-top: 100px;
-	padding-left: 5%;
+	padding-left: 40%;
 	font-family: 'press2p';
 	color: white;
 	font-size: 40px;
@@ -13,47 +13,32 @@ h1{
 }
 
 /* LINK */
-a.play{
+a.menu{
 	position: absolute;
 	font-family: 'press2p';
 	color: white;
 	text-decoration: none;
 	font-size: 30px;
 
-	padding-left: 20%;
-	margin-top: 70px;
+	padding-left: 67%;
+	margin-top: 50px;
 
 	display: inline-block;
 }
-a.play:hover{
- 	animation: Test 1s infinite;
-}
-a.credit{
-	position: relative;
-	font-family: 'press2p';
-	color: white;
-	text-decoration: none;
-	font-size: 30px;
-
-	padding-left: 20%;
-	margin-top: 130px;
-
-	display: inline-block;
-}
-a.credit:hover{
+a.menu:hover{
  	animation: Test 1s infinite;
 }
 
 /* P */
 p{
-	position: relative;
+	position: absolute;
 	font-family: 'press2p';
 	color: white;
 	text-decoration: none;
 	font-size: 20px;
 
-	padding-left: 10%;
-	margin-top: 100px;
+	margin-left: 5%;
+	margin-top: 12%;
 
 	display: inline-block;
 	text-align: center;
@@ -61,12 +46,27 @@ p{
 }
 /* IMG */	
 
-img.eklectruc{
+img.nutstick{
 	position: absolute;
-	padding-left: 60%;
+	margin-left: 5%;
 	margin-top: 0%;
-	width: 27%;
+	width: 40%;
 }
+img.photo{
+	position: relative;
+	display: inline-block;
+	width: 12%;
+	margin-left: 40%;
+	margin-top: 11%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+
 
 /* ANIMATION */
 h1{
