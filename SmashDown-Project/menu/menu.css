@@ -1,0 +1,91 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url('test.jpg');
+}
+h1{
+	padding-top: 100px;
+	padding-left: 5%;
+	font-family: 'press2p';
+	color: white;
+	font-size: 40px;
+
+}
+
+/* LINK */
+a.play{
+	position: absolute;
+	font-family: 'press2p';
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+
+	padding-left: 20%;
+	margin-top: 70px;
+
+	display: inline-block;
+}
+a.play:hover{
+ 	animation: Test 1s infinite;
+}
+a.credit{
+	position: relative;
+	font-family: 'press2p';
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+
+	padding-left: 0%;
+	margin-top: 70px;
+
+	display: inline-block;
+}
+a.credit:hover{
+ 	animation: Test 1s infinite;
+}
+
+/* P */
+p{
+	position: relative;
+	font-family: 'press2p';
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+
+	padding-left: 10%;
+	margin-top: 100px;
+
+	display: inline-block;
+	text-align: center;
+	Line-Height: 1.5;
+}
+/* IMG */	
+
+img.gif1{
+	position: relative;
+	padding-top: 50px;
+	padding-left: 12%;
+	opacity: 0;
+}
+
+img.gif2{
+	opacity: 0;
+}
+
+
+/* ANIMATION */
+h1{
+    animation: Test 1s infinite;
+}
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+/* FONT */
+@font-face{
+	font-family: 'press2p';
+	src: url('../font/pressStart2p.ttf');
+}
