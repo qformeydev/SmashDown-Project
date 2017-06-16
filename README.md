@@ -33,6 +33,7 @@ C'est un jeu de combat qui a lieu dans un monde différent ou des chefs de gangs
    * HealthBar created
    * Fighting System
    * Block System
- #### PROTO V1.0 DONE WITH SUCCESS 
+ #### PROTO V1.0 DONE WITH SUCCESS
+ #### PROTO IS MADE TO BE SET IN FULLSCREEN / F11
 
 -N'hésitez pas a faire des donations. lel
