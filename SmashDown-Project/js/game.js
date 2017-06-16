@@ -251,6 +251,15 @@
 
 			game.physics.arcade.collide(player_eklectruc, player_nutstick);
 			game.physics.arcade.collide(player_nutstick, player_eklectruc);
+
+				// GESTION HIT		
+					hit_symbole_nutstick.x = player_nutstick.x;
+					hit_symbole_nutstick.x -= 50;
+					hit_symbole_nutstick.alpha = 0;	
+
+					hit_symbole_eklectruc.x = player_eklectruc.x;
+					hit_symbole_eklectruc.x += 180;
+					hit_symbole_eklectruc.alpha = 0;
 			
 
 			
@@ -262,11 +271,6 @@
 					block_eklectruc.x = player_eklectruc.x;
 					block_eklectruc.x += 60;
 					block_eklectruc.alpha = 0;
-
-				// GESTION HIT		
-					hit_symbole_eklectruc.x = player_eklectruc.x;
-					hit_symbole_eklectruc.x += 180;
-					hit_symbole_eklectruc.alpha = 0;
 
 		
 			    if (qKey.isDown) {
@@ -284,6 +288,14 @@
 			        player_eklectruc_sample.alpha = 0;      
 			    }
 
+			    if (oneKey.isDown) {
+			    	if (game.physics.arcade.collide(player_eklectruc_sample, player_nutstick)) {
+			    		hit_symbole_nutstick.alpha = 1;
+			    	}
+			    }
+			    else if (oneKey.isUp) {
+			    	hit_symbole_nutstick.alpha = 0;
+			    }
 
 			    if (twoKey.isDown) {
 			    	parade.eklectruc = true;
@@ -306,11 +318,6 @@
 					block_nutstick.x += 60;
 					block_nutstick.alpha = 0;
 
-				// GESTION HIT		
-					hit_symbole_nutstick.x = player_nutstick.x;
-					hit_symbole_nutstick.x -= 50;
-					hit_symbole_nutstick.alpha = 0;
-
 				
 			    if (kKey.isDown) {
 			        player_nutstick.body.velocity.x -= 366;
@@ -327,6 +334,14 @@
 			        player_nutstick_sample.alpha = 0;       
 			    }	    
 
+			    if (nineKey.isDown) {
+			    	if (game.physics.arcade.collide(player_nutstick_sample, player_eklectruc)) {
+			    		hit_symbole_eklectruc.alpha = 1;
+			    	}
+			    }
+			    else if (nineKey.isUp) {
+			    	hit_symbole_eklectruc.alpha = 0;
+			    }
 
 			    if (eightKey.isDown) {
 			    	parade.nutstick = true;
